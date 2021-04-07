@@ -32,7 +32,7 @@ class _ToDoState extends State<ToDo> {
                 child: Text(
                 "Add a task",
                 style:
-                    TextStyle(fontSize:size.width*0.02,fontWeight: FontWeight.w400, color: Colors.black),
+                    TextStyle(fontSize:size.width*0.045,fontWeight: FontWeight.w400, color: Colors.black),
               ))
             :  Container(
         child:ListView.builder(
@@ -48,8 +48,10 @@ class _ToDoState extends State<ToDo> {
       floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => TaskAdjustment()));
+            Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => TaskAdjustment()));
           }),
     );
   }

@@ -31,7 +31,7 @@ taskList.add(Task.fromMap(element));
 taskList.sort((task1,task2)=>task1.date.compareTo(task2.date));
 }
   List<Task> get_task_list()=> taskList;
-insertTask(Task task) async {
+addTask(Task task) async {
 Database db=this.db;
 final result =await db.insert(taskTable,task.toMap());
 return result;    
